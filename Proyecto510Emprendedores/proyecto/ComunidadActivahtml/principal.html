@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad Activa | Plataforma</title>
+    <!-- Rutas para los estilos -->
+    <link rel="stylesheet" href="../ComunidadActivaCSS/comunes.css">
+    <link rel="stylesheet" href="../ComunidadActivaCSS/principal.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="icono-hoja">🍃</span>
+            <div class="texto-logo">
+                <span class="comunidad">Comunidad</span>
+                <span class="activa">Activa</span>
+            </div>
+        </div>
+        <nav class="menu">
+            <a href="principal.html" class="activo">Inicio</a>
+            <a href="nosotros.html">Sobre Nosotros ▾</a>
+        </nav>
+        <a href="reportar.html" class="btn-reportar">
+            <span class="icono-alerta">⚠️</span> REPORTAR INCIDENCIA
+        </a>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="contenedor-principal">
+        <!-- Banner Principal (Carrusel Estático) -->
+        <section class="carrusel-contenedor">
+            <div class="carrusel-slides">
+                <div id="slide1" class="slide">
+                    <div class="overlay">
+                        <h2>Transparencia y Acción Ciudadana</h2>
+                        <p>Reporta fallas urbanas y monitorea las respuestas en tiempo real.</p>
+                    </div>
+                    <a href="#slide2" class="flecha derecha">›</a>
+                </div>
+                
+                <div id="slide2" class="slide slide-2">
+                    <div class="overlay">
+                        <h2>Juntos Hacemos Más</h2>
+                        <p>Participa en los eventos y mejoras de tu comunidad.</p>
+                    </div>
+                    <a href="#slide1" class="flecha izquierda">‹</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Acciones Recientes y Galería -->
+        <section class="seccion-galeria">
+            <div class="titulo-seccion">
+                <h3>Acciones Recientes y Galería</h3>
+            </div>
+            
+            <div class="grid-tarjetas">
+                <div class="tarjeta">
+                    <div class="imagen-tarjeta img-parques"></div>
+                    <h4>Mantenimiento de Parques</h4>
+                </div>
+                <div class="tarjeta">
+                    <div class="imagen-tarjeta img-reciclaje"></div>
+                    <h4>Puntos Verdes de Reciclaje</h4>
+                </div>
+                <div class="tarjeta">
+                    <div class="imagen-tarjeta img-atencion"></div>
+                    <h4>Atención Comunitaria</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

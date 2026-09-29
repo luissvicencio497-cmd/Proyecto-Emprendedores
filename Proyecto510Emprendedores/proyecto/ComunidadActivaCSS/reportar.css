@@ -1,0 +1,78 @@
+/* ================= ESTRUCTURA SECCIÓN REPORTAR ================= */
+.contenedor-reportar {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.tarjeta-formulario {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-top: 5px solid #ef4444;
+}
+
+.tarjeta-formulario h2 {
+    font-size: 26px;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.tarjeta-formulario p {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* ================= FORMULARIO ================= */
+.formulario-incidencia {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grupo-campo label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.grupo-campo input,
+.grupo-campo select,
+.grupo-campo textarea {
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #1f2937;
+    background-color: #f9fafb;
+}
+
+.grupo-campo input:focus,
+.grupo-campo select:focus,
+.grupo-campo textarea:focus {
+    outline: none;
+    border-color: #22c55e;
+    background-color: white;
+}
+
+/* Botón de envío */
+.btn-enviar {
+    background-color: #22c55e;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}

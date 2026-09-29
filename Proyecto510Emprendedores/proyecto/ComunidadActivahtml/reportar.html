@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Incidencia - Comunidad Activa</title>
+    <!-- Rutas para los estilos -->
+    <link rel="stylesheet" href="../ComunidadActivaCSS/comunes.css">
+    <link rel="stylesheet" href="../ComunidadActivaCSS/reportar.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="icono-hoja">🍃</span>
+            <div class="texto-logo">
+                <span class="comunidad">Comunidad</span>
+                <span class="activa">Activa</span>
+            </div>
+        </div>
+        <nav class="menu">
+            <a href="principal.html">Inicio</a>
+            <a href="nosotros.html">Sobre Nosotros ▾</a>
+        </nav>
+        <a href="reportar.html" class="btn-reportar">
+            <span class="icono-alerta">⚠️</span> REPORTAR INCIDENCIA
+        </a>
+    </header>
+
+    <!-- Contenido Principal: Formulario de Reporte y Monitor de Estado -->
+    <main class="contenedor-reportar">
+        <!-- Tarjeta de Registro de Incidencia -->
+        <div class="tarjeta-formulario">
+            <h2>Registrar Nueva Incidencia</h2>
+            <p>Completa el siguiente formulario para reportar un problema en tu comunidad. Las autoridades y vecinos podrán visualizarlo para su pronta atención.</p>
+
+            <form class="formulario-incidencia">
+                <div class="grupo-campo">
+                    <label for="tipo">Tipo de Incidencia</label>
+                    <select id="tipo" name="tipo">
+                        <option value="">Selecciona una opción</option>
+                        <option value="bache">Bache en la vía pública</option>
+                        <option value="luminaria">Falla en alumbrado público</option>
+                        <option value="basura">Acumulación de basura</option>
+                        <option value="fuga">Fuga de agua</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="ubicacion">Ubicación o Referencia</label>
+                    <input type="text" id="ubicacion" name="ubicacion" placeholder="Ej. Calle Principal #123, Colonia Centro">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="descripcion">Descripción del Problema</label>
+                    <textarea id="descripcion" name="descripcion" rows="4" placeholder="Detalla brevemente la situación..."></textarea>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="contacto">Correo o Teléfono de Contacto</label>
+                    <input type="text" id="contacto" name="contacto" placeholder="Para dar seguimiento a tu reporte">
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Reporte</button>
+            </form>
+        </div>
+
+        <!-- Seccion: Monitoreo de Estado del Trabajo (Estático) -->
+        <div class="tarjeta-estado">
+            <h2>Estado del Progreso</h2>
+            <p>Consulta la evolución y el avance de los trabajos reportados en tu comunidad.</p>
+
+            <div class="panel-seguimiento">
+                <!-- Información del reporte en monitoreo -->
+                <div class="encabezado-reporte">
+                    <span class="id-reporte">Reporte #1024</span>
+                    <span class="etiqueta-estado estado-en-progreso">En Progreso</span>
+                </div>
+
+                <h3>Reparación de Alumbrado Público - Calle Olmos</h3>
+
+                <!-- Barra de Progreso Estática -->
+                <div class="contenedor-barra-progreso">
+                    <div class="barra-progreso" style="width: 60%;"></div>
+                </div>
+
+                <!-- Indicadores de Fase -->
+                <div class="fases-progreso">
+                    <div class="fase completada">
+                        <span class="icono-fase">✓</span>
+                        <span class="texto-fase">Iniciado</span>
+                    </div>
+                    <div class="fase en-pausa">
+                        <span class="icono-fase">⏸</span>
+                        <span class="texto-fase">En Pausa</span>
+                    </div>
+                    <div class="fase pendiente">
+                        <span class="icono-fase">⌛</span>
+                        <span class="texto-fase">Terminado</span>
+                    </div>
+                </div>
+
+                <!-- Registro estático de historial de estado -->
+                <div class="historial-estado">
+                    <h4>Seguimiento de Actividades</h4>
+                    <ul>
+                        <li>
+                            <span class="fecha">28 Sep 2026</span>
+                            <span class="descripcion-estado">Trabajo <strong>En Pausa</strong> temporalmente por falta de insumos de repuesto.</span>
+                        </li>
+                        <li>
+                            <span class="fecha">25 Sep 2026</span>
+                            <span class="descripcion-estado">Trabajo <strong>Iniciado</strong>. Cuadrilla en sitio evaluando el cableado subterráneo.</span>
+                        </li>
+                        <li>
+                            <span class="fecha">20 Sep 2026</span>
+                            <span class="descripcion-estado">Reporte recibido y programado para atención.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

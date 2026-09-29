@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.icono-hoja { 
+    font-size: 28px; 
+    color: #84cc16; 
+}
+
+.texto-logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.comunidad { color: #1f2937; }
+.activa { color: #22c55e; }
+
+/* Menú de navegación */
+.menu a {
+    text-decoration: none;
+    color: #4b5563;
+    margin: 0 15px;
+    font-size: 16px;
+}
+.menu a.activo { 
+    font-weight: 700; 
+    color: #111827; 
+}
+
+.btn-reportar {
+    background-color: #ef4444;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.icono-hoja { 
+    font-size: 28px; 
+    color: #84cc16; 
+}
+
+.texto-logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.comunidad { color: #1f2937; }
+.activa { color: #22c55e; }
+
+/* Menú de navegación */
+.menu a {
+    text-decoration: none;
+    color: #4b5563;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.menu a:hover {
+    color: #22c55e;
+}
+
+.menu a.activo { 
+    font-weight: 700; 
+    color: #111827; 
+}
+
+.btn-reportar {
+    background-color: #ef4444;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-reportar:hover {
+    background-color: #dc2626;
+}
